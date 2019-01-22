@@ -1,0 +1,423 @@
+/*Global-------------------------------------------------------------------->*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+	width: 100%;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.about-p a {
+	color: #0b79fc;
+	text-decoration: none;
+}
+
+.about-p a:hover {
+	color: #0b79fc;
+	text-decoration: underline;
+}
+
+/*Btn--------------------------------->*/
+.btn-detail {
+margin-top: 20px;
+padding: 16px 32px;
+background-color: #0b79fc;
+text-decoration: none;
+color: white;
+transition: 0.5s;
+}
+
+.btn-detail:hover {
+cursor: pointer;
+border-radius: 25px;
+}
+
+/*Scrollbar--------------------------->*/
+	/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+	/* Track */
+::-webkit-scrollbar-track {
+    background: #e5e5e5;
+}
+
+	/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0b79fc;
+    border-radius: 55px;
+}
+
+	/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(77,77,77);
+    tansition: 0.9s;
+}
+/*Antet---------------------------------------------------------------------->*/
+header nav {
+	background-color: black;
+	color:white;
+	height: 50px;
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+header li {
+	display: inline-block;
+	padding: 15px 32px;
+}
+
+header li a {
+	/* padding: 15px 32px; */
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover{
+	/* cursor: pointer; */
+	/*background-color: rgb(30,30,30);*/
+	text-decoration: underline;
+	/* background-color: rgb(77,77,77); */
+	transition: 0.5s;
+}
+
+/*Main navbar----------------------------------------------------------------->*/
+.navbar nav {
+	background-color: #e5e5e5;
+	height: 80px;
+	border-bottom: 2px solid rgb(11, 121, 252);
+}
+
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	float: right;
+}
+
+.navbar li {
+	display: inline-block;
+	/* padding-top: 32px; */
+	padding: 32px 54px;
+	color: black;
+	font-weight: bold;
+	position: relative;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+	/* padding: 32px 54px; */
+}
+
+.navbar a:hover {
+	cursor: pointer;
+	color: rgb(11, 121, 252);
+	transition: 0.5s;
+}
+
+#logo {
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	height: 60px;
+	/* padding-top: 12px; */
+}
+
+/* Dropdown ------------------------------------>*/
+#nav li ul {
+	display: none;
+	background-color: #e5e5e5;
+	position: absolute;
+	top: 82px;
+	width: 320px;
+	padding: 15px 15px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+#nav li:hover ul {
+	display: block;
+}
+
+#nav li ul li{
+	display: block;
+	padding: 15px 10px;
+	padding-left: 20px;
+	border-bottom: 1px solid #a5a5a5;
+}
+
+#nav li ul li:first-of-type{;
+	border-top: 1px solid #a5a5a5;
+}
+
+#nav li ul li a {
+	padding: 10px 10px;
+}
+
+/*Showcase---------------------------->*/
+.showcase {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/showcase.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 82vh;
+	text-align: center;
+	color: #e5e5e5;
+}
+
+.showcase h1 {
+	margin: 0;
+	padding-top: 200px;
+	font-size: 4em;
+}
+
+.showcase p{
+	font-style: italic;
+	font-size: 19px;
+}
+
+/*Grid for services------------------------------------------------------->*/
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 10px;
+	text-align: center;
+}
+
+.grid-item {
+	display: block;
+	padding-top: 60px;
+	/* border: 1px solid black; */
+}
+
+.grid-item p {
+	padding-bottom: 30px;
+}
+
+.grid-item h2 {
+	text-transform: uppercase;
+}
+
+.prez-serv {
+	padding: 20px 0;
+}
+
+.serv > .container > h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 80px;
+}
+
+/* Despre noi---------------------------------------------------------------> */
+.despre h1{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.despre p{
+	text-align: left;
+	margin-top: 50px;
+}
+
+.despre .container .grid-container .grid-item p{
+	text-align: left
+}
+
+.about-team {
+	/* width: 450px; */
+	width: auto;
+	height: 300px;
+	background-color: #e5e5e5;
+}
+
+.about-p {
+	font-weight: bold;
+}
+/*Portofoliu--------------------------------------------------------------->*/
+.colaborare {
+	width: 400px;
+	margin: 0 4px;
+	transition: .2s;
+}
+
+.portofoliu > .container > h1 {
+	text-align: center;
+	margin-top: 100px;
+	text-transform: uppercase;
+}
+
+.colaborare:hover {
+	opacity: .8;
+	transform: scale(1.1);
+}
+
+/*Opinii clienti------------------------------------------------------------->*/
+.bara-clienti {
+	background-color: black;
+	height: 80px;
+	margin-top: 60px;
+}
+
+.poze-container {
+	/*vezi cum le aliniezi*/
+}
+
+.poza-client {
+	width: 80px;
+	height: 80px;
+	background-color: #e5e5e5;
+	display: inline-block;
+	transition: 300ms;
+}
+
+.poza-client:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.parere {
+	background-color: #e5e5e5;
+	/*border-radius: 25px;*/
+	height: 300px;
+}
+
+.parere p {
+	padding-top: 100px
+}
+
+.parere-container{
+	width: 90%;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.quotes {
+	position: absolute;
+	z-index: 0;
+	margin-top: 20px;
+	opacity: 0.5;
+}
+
+/*Formular------------------------------------------------------------------>*/
+.form {
+	display: block;
+	height: 80vh;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding-bottom: 25px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.form h2 {
+	text-transform: uppercase;
+	padding-top: 50px;
+	text-decoration: underline;
+}
+
+.form input {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1px solid black;
+	box-shadow: none;
+	width: 50%;
+	height: 60px;
+	font-size: 20px;
+}
+
+.form input:last-child {
+	padding-bottom: 200px;
+	height: 200px;
+}
+
+textarea {
+	font-family: Montserrat;
+	font-size: 20px;
+	width: 50%;
+	border-bottom: 1px solid black;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+form button {
+	border: none;
+}
+
+/*Footer------------------------------------------------------------------->*/
+footer {
+	height: 50px;
+	text-align: center;
+	/*border-top: 1px solid #0b79fc;*/
+	border-top: 1px solid rgb(11, 121, 252);
+	/* margin-top: 50px; */
+	background-color: rgb(11, 121, 252);
+	color: white;
+	/* padding-top: 10px; */
+}
+
+/* Portofoliu.html grid ----------------------------------------------------> */
+.port-grid {
+	display:grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-column-gap: 0px;
+	grid-row-gap: 15px;
+	width: 100%;
+	margin: 50px 0;
+	padding: 0;
+}
+
+.port-item {
+	width: 260px;
+	height: 260px;
+	/* background-color: rgb(77,77,77); */
+	background-color: rgb(11, 121, 252);
+	text-align: center;
+	color: #e5e5e5;
+	/* position: absolute; */
+}
+
+.port-item p {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	font-size: 1.9em;
+	text-transform: uppercase;
+}
+
+.port-grid a {
+	text-decoration: none;
+	padding: none;
+	margin: none;
+	transition: 300ms;
+}
+
+.port-grid a:hover {
+	opacity: 0.85;
+	transform: scale(1.1);
+}
+
+/* Servicii .html ----------------------------------------------------------> */
+.servicii {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.serv-poza {
+	float: right;
+}
+
+/* .serv-info{
+	float: left;
+	text-align: left;
+} */
